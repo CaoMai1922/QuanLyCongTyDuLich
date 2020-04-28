@@ -33,6 +33,12 @@
             this.mskNgayDangKy = new System.Windows.Forms.MaskedTextBox();
             this.txtMaKhach = new System.Windows.Forms.TextBox();
             this.dataGridView_DangKyTour = new System.Windows.Forms.DataGridView();
+            this.MaDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaKhach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaLichTour = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSoLuongDangKy = new System.Windows.Forms.TextBox();
             this.txtMaDangKy = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,12 +64,6 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtThanhTien = new System.Windows.Forms.TextBox();
-            this.MaDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaKhach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaLichTour = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuongDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DangKyTour)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,11 +81,11 @@
             // 
             // mskNgayDangKy
             // 
-            this.mskNgayDangKy.Location = new System.Drawing.Point(591, 205);
+            this.mskNgayDangKy.Location = new System.Drawing.Point(591, 101);
             this.mskNgayDangKy.Margin = new System.Windows.Forms.Padding(4);
             this.mskNgayDangKy.Mask = "00/00/0000";
             this.mskNgayDangKy.Name = "mskNgayDangKy";
-            this.mskNgayDangKy.Size = new System.Drawing.Size(112, 30);
+            this.mskNgayDangKy.Size = new System.Drawing.Size(132, 30);
             this.mskNgayDangKy.TabIndex = 45;
             // 
             // txtMaKhach
@@ -106,13 +106,61 @@
             this.NgayDangKy,
             this.SoLuongDangKy,
             this.ThanhTien});
-            this.dataGridView_DangKyTour.Location = new System.Drawing.Point(63, 282);
+            this.dataGridView_DangKyTour.Location = new System.Drawing.Point(123, 321);
             this.dataGridView_DangKyTour.Margin = new System.Windows.Forms.Padding(6);
             this.dataGridView_DangKyTour.Name = "dataGridView_DangKyTour";
             this.dataGridView_DangKyTour.RowHeadersWidth = 51;
             this.dataGridView_DangKyTour.Size = new System.Drawing.Size(908, 171);
             this.dataGridView_DangKyTour.TabIndex = 35;
             this.dataGridView_DangKyTour.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_DangKyTour_CellClick);
+            // 
+            // MaDangKy
+            // 
+            this.MaDangKy.DataPropertyName = "MaDangKy";
+            this.MaDangKy.HeaderText = "Mã Đăng Ký";
+            this.MaDangKy.MinimumWidth = 6;
+            this.MaDangKy.Name = "MaDangKy";
+            this.MaDangKy.Width = 125;
+            // 
+            // MaKhach
+            // 
+            this.MaKhach.DataPropertyName = "MaKhach";
+            this.MaKhach.HeaderText = "Mã Khách";
+            this.MaKhach.MinimumWidth = 6;
+            this.MaKhach.Name = "MaKhach";
+            this.MaKhach.Width = 125;
+            // 
+            // MaLichTour
+            // 
+            this.MaLichTour.DataPropertyName = "MaLichTour";
+            this.MaLichTour.HeaderText = "Mã Lịch Tour";
+            this.MaLichTour.MinimumWidth = 6;
+            this.MaLichTour.Name = "MaLichTour";
+            this.MaLichTour.Width = 125;
+            // 
+            // NgayDangKy
+            // 
+            this.NgayDangKy.DataPropertyName = "NgayDangKy";
+            this.NgayDangKy.HeaderText = "Ngày Đăng Ký";
+            this.NgayDangKy.MinimumWidth = 6;
+            this.NgayDangKy.Name = "NgayDangKy";
+            this.NgayDangKy.Width = 125;
+            // 
+            // SoLuongDangKy
+            // 
+            this.SoLuongDangKy.DataPropertyName = "SoLuongDangKy";
+            this.SoLuongDangKy.HeaderText = "Số Lượng Đăng Ký";
+            this.SoLuongDangKy.MinimumWidth = 6;
+            this.SoLuongDangKy.Name = "SoLuongDangKy";
+            this.SoLuongDangKy.Width = 125;
+            // 
+            // ThanhTien
+            // 
+            this.ThanhTien.DataPropertyName = "ThanhTien";
+            this.ThanhTien.HeaderText = "Thành Tiền";
+            this.ThanhTien.MinimumWidth = 6;
+            this.ThanhTien.Name = "ThanhTien";
+            this.ThanhTien.Width = 125;
             // 
             // txtSoLuongDangKy
             // 
@@ -143,7 +191,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(440, 208);
+            this.label4.Location = new System.Drawing.Point(429, 104);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(126, 22);
@@ -236,7 +284,7 @@
             // 
             this.cboMaTour.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMaTour.FormattingEnabled = true;
-            this.cboMaTour.Location = new System.Drawing.Point(591, 101);
+            this.cboMaTour.Location = new System.Drawing.Point(591, 213);
             this.cboMaTour.Margin = new System.Windows.Forms.Padding(4);
             this.cboMaTour.Name = "cboMaTour";
             this.cboMaTour.Size = new System.Drawing.Size(132, 30);
@@ -247,7 +295,7 @@
             // txtDonGia
             // 
             this.txtDonGia.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDonGia.Location = new System.Drawing.Point(591, 160);
+            this.txtDonGia.Location = new System.Drawing.Point(591, 256);
             this.txtDonGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(132, 30);
@@ -257,7 +305,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(440, 163);
+            this.label3.Location = new System.Drawing.Point(429, 259);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 22);
@@ -268,7 +316,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(440, 104);
+            this.label8.Location = new System.Drawing.Point(429, 216);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 22);
@@ -282,7 +330,7 @@
             this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(142, 465);
+            this.btnSua.Location = new System.Drawing.Point(172, 532);
             this.btnSua.Margin = new System.Windows.Forms.Padding(6);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(100, 34);
@@ -298,7 +346,7 @@
             this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(287, 465);
+            this.btnXoa.Location = new System.Drawing.Point(306, 532);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(6);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 34);
@@ -314,7 +362,7 @@
             this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(14, 465);
+            this.btnThem.Location = new System.Drawing.Point(27, 532);
             this.btnThem.Margin = new System.Windows.Forms.Padding(6);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(100, 34);
@@ -330,7 +378,7 @@
             this.btnDong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
             this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDong.Location = new System.Drawing.Point(744, 465);
+            this.btnDong.Location = new System.Drawing.Point(772, 532);
             this.btnDong.Margin = new System.Windows.Forms.Padding(6);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(100, 34);
@@ -346,7 +394,7 @@
             this.btnHienThi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnHienThi.Image = ((System.Drawing.Image)(resources.GetObject("btnHienThi.Image")));
             this.btnHienThi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHienThi.Location = new System.Drawing.Point(889, 465);
+            this.btnHienThi.Location = new System.Drawing.Point(916, 532);
             this.btnHienThi.Margin = new System.Windows.Forms.Padding(6);
             this.btnHienThi.Name = "btnHienThi";
             this.btnHienThi.Size = new System.Drawing.Size(154, 34);
@@ -362,7 +410,7 @@
             this.btnHuy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
             this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuy.Location = new System.Drawing.Point(591, 465);
+            this.btnHuy.Location = new System.Drawing.Point(623, 532);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(6);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(100, 34);
@@ -378,7 +426,7 @@
             this.btnLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLuu.Image = global::QuanLyCongTyDuLich.Properties.Resources._checked;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(419, 465);
+            this.btnLuu.Location = new System.Drawing.Point(460, 532);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(6);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(136, 34);
@@ -391,7 +439,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(440, 252);
+            this.label9.Location = new System.Drawing.Point(429, 163);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(92, 22);
@@ -401,65 +449,17 @@
             // txtThanhTien
             // 
             this.txtThanhTien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtThanhTien.Location = new System.Drawing.Point(591, 252);
+            this.txtThanhTien.Location = new System.Drawing.Point(591, 160);
             this.txtThanhTien.Margin = new System.Windows.Forms.Padding(4);
             this.txtThanhTien.Name = "txtThanhTien";
             this.txtThanhTien.Size = new System.Drawing.Size(132, 30);
             this.txtThanhTien.TabIndex = 63;
             // 
-            // MaDangKy
-            // 
-            this.MaDangKy.DataPropertyName = "MaDangKy";
-            this.MaDangKy.HeaderText = "Mã Đăng Ký";
-            this.MaDangKy.MinimumWidth = 6;
-            this.MaDangKy.Name = "MaDangKy";
-            this.MaDangKy.Width = 125;
-            // 
-            // MaKhach
-            // 
-            this.MaKhach.DataPropertyName = "MaKhach";
-            this.MaKhach.HeaderText = "Mã Khách";
-            this.MaKhach.MinimumWidth = 6;
-            this.MaKhach.Name = "MaKhach";
-            this.MaKhach.Width = 125;
-            // 
-            // MaLichTour
-            // 
-            this.MaLichTour.DataPropertyName = "MaLichTour";
-            this.MaLichTour.HeaderText = "Mã Lịch Tour";
-            this.MaLichTour.MinimumWidth = 6;
-            this.MaLichTour.Name = "MaLichTour";
-            this.MaLichTour.Width = 125;
-            // 
-            // NgayDangKy
-            // 
-            this.NgayDangKy.DataPropertyName = "NgayDangKy";
-            this.NgayDangKy.HeaderText = "Ngày Đăng Ký";
-            this.NgayDangKy.MinimumWidth = 6;
-            this.NgayDangKy.Name = "NgayDangKy";
-            this.NgayDangKy.Width = 125;
-            // 
-            // SoLuongDangKy
-            // 
-            this.SoLuongDangKy.DataPropertyName = "SoLuongDangKy";
-            this.SoLuongDangKy.HeaderText = "Số Lượng Đăng Ký";
-            this.SoLuongDangKy.MinimumWidth = 6;
-            this.SoLuongDangKy.Name = "SoLuongDangKy";
-            this.SoLuongDangKy.Width = 125;
-            // 
-            // ThanhTien
-            // 
-            this.ThanhTien.DataPropertyName = "ThanhTien";
-            this.ThanhTien.HeaderText = "Thành Tiền";
-            this.ThanhTien.MinimumWidth = 6;
-            this.ThanhTien.Name = "ThanhTien";
-            this.ThanhTien.Width = 125;
-            // 
             // FrmDangKyTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1172, 526);
+            this.ClientSize = new System.Drawing.Size(1172, 607);
             this.Controls.Add(this.txtThanhTien);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);

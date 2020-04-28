@@ -30,8 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTPBC2TuNgay = new System.Windows.Forms.DateTimePicker();
-            this.dateTPBC2DenNgay = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridViewBC2 = new System.Windows.Forms.DataGridView();
             this.MaCongTy = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +40,8 @@
             this.btnInBC2 = new System.Windows.Forms.Button();
             this.btnHienThiBC2 = new System.Windows.Forms.Button();
             this.btnBatDauBC2 = new System.Windows.Forms.Button();
+            this.dateTPBC2TuNgay = new System.Windows.Forms.DateTimePicker();
+            this.dateTPBC2DenNgay = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBC2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,9 +50,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(279, 67);
+            this.label1.Location = new System.Drawing.Point(372, 82);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.Size = new System.Drawing.Size(84, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Từ ngày";
             // 
@@ -60,38 +61,22 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(279, 102);
+            this.label2.Location = new System.Drawing.Point(372, 126);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 20);
+            this.label2.Size = new System.Drawing.Size(96, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Đến ngày";
-            // 
-            // dateTPBC2TuNgay
-            // 
-            this.dateTPBC2TuNgay.CustomFormat = "yyyy-MM-dd";
-            this.dateTPBC2TuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTPBC2TuNgay.Location = new System.Drawing.Point(376, 67);
-            this.dateTPBC2TuNgay.Name = "dateTPBC2TuNgay";
-            this.dateTPBC2TuNgay.Size = new System.Drawing.Size(175, 20);
-            this.dateTPBC2TuNgay.TabIndex = 2;
-            // 
-            // dateTPBC2DenNgay
-            // 
-            this.dateTPBC2DenNgay.CustomFormat = "yyyy-MM-dd";
-            this.dateTPBC2DenNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTPBC2DenNgay.Location = new System.Drawing.Point(376, 102);
-            this.dateTPBC2DenNgay.Name = "dateTPBC2DenNgay";
-            this.dateTPBC2DenNgay.Size = new System.Drawing.Size(175, 20);
-            this.dateTPBC2DenNgay.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(44, 13);
+            this.label3.Location = new System.Drawing.Point(59, 16);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(596, 25);
+            this.label3.Size = new System.Drawing.Size(760, 31);
             this.label3.TabIndex = 4;
             this.label3.Text = "BÁO CÁO DOANH THU CÁC TOUR CỦA CÁC CÔNG TY";
             // 
@@ -103,10 +88,11 @@
             this.MaCongTy,
             this.TenCongTy,
             this.DoanhThu});
-            this.dataGridViewBC2.Location = new System.Drawing.Point(118, 152);
+            this.dataGridViewBC2.Location = new System.Drawing.Point(157, 187);
+            this.dataGridViewBC2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewBC2.Name = "dataGridViewBC2";
             this.dataGridViewBC2.RowHeadersWidth = 51;
-            this.dataGridViewBC2.Size = new System.Drawing.Size(432, 134);
+            this.dataGridViewBC2.Size = new System.Drawing.Size(576, 165);
             this.dataGridViewBC2.TabIndex = 5;
             // 
             // MaCongTy
@@ -136,9 +122,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QuanLyCongTyDuLich.Properties.Resources.paper;
-            this.pictureBox1.Location = new System.Drawing.Point(118, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(157, 50);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(97, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(129, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -149,9 +136,10 @@
             this.btnThoatBC2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnThoatBC2.Image = global::QuanLyCongTyDuLich.Properties.Resources.close__1_1;
             this.btnThoatBC2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoatBC2.Location = new System.Drawing.Point(538, 318);
+            this.btnThoatBC2.Location = new System.Drawing.Point(717, 391);
+            this.btnThoatBC2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThoatBC2.Name = "btnThoatBC2";
-            this.btnThoatBC2.Size = new System.Drawing.Size(83, 31);
+            this.btnThoatBC2.Size = new System.Drawing.Size(111, 38);
             this.btnThoatBC2.TabIndex = 9;
             this.btnThoatBC2.Text = "Thoát";
             this.btnThoatBC2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -164,9 +152,10 @@
             this.btnInBC2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnInBC2.Image = global::QuanLyCongTyDuLich.Properties.Resources.center_alignment;
             this.btnInBC2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInBC2.Location = new System.Drawing.Point(194, 318);
+            this.btnInBC2.Location = new System.Drawing.Point(259, 391);
+            this.btnInBC2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInBC2.Name = "btnInBC2";
-            this.btnInBC2.Size = new System.Drawing.Size(123, 32);
+            this.btnInBC2.Size = new System.Drawing.Size(164, 39);
             this.btnInBC2.TabIndex = 8;
             this.btnInBC2.Text = "In Báo Cáo";
             this.btnInBC2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -179,9 +168,10 @@
             this.btnHienThiBC2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnHienThiBC2.Image = global::QuanLyCongTyDuLich.Properties.Resources.preview;
             this.btnHienThiBC2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHienThiBC2.Location = new System.Drawing.Point(376, 318);
+            this.btnHienThiBC2.Location = new System.Drawing.Point(501, 391);
+            this.btnHienThiBC2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHienThiBC2.Name = "btnHienThiBC2";
-            this.btnHienThiBC2.Size = new System.Drawing.Size(105, 32);
+            this.btnHienThiBC2.Size = new System.Drawing.Size(140, 39);
             this.btnHienThiBC2.TabIndex = 7;
             this.btnHienThiBC2.Text = "Hiển Thị";
             this.btnHienThiBC2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -194,21 +184,44 @@
             this.btnBatDauBC2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnBatDauBC2.Image = global::QuanLyCongTyDuLich.Properties.Resources.television_copy;
             this.btnBatDauBC2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBatDauBC2.Location = new System.Drawing.Point(49, 318);
+            this.btnBatDauBC2.Location = new System.Drawing.Point(65, 391);
+            this.btnBatDauBC2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBatDauBC2.Name = "btnBatDauBC2";
-            this.btnBatDauBC2.Size = new System.Drawing.Size(100, 31);
+            this.btnBatDauBC2.Size = new System.Drawing.Size(133, 38);
             this.btnBatDauBC2.TabIndex = 6;
             this.btnBatDauBC2.Text = "Bắt đầu";
             this.btnBatDauBC2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBatDauBC2.UseVisualStyleBackColor = true;
             this.btnBatDauBC2.Click += new System.EventHandler(this.btnBatDauBC2_Click);
             // 
+            // dateTPBC2TuNgay
+            // 
+            this.dateTPBC2TuNgay.CustomFormat = "yyyy/MM/dd";
+            this.dateTPBC2TuNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTPBC2TuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTPBC2TuNgay.Location = new System.Drawing.Point(501, 82);
+            this.dateTPBC2TuNgay.Name = "dateTPBC2TuNgay";
+            this.dateTPBC2TuNgay.Size = new System.Drawing.Size(232, 30);
+            this.dateTPBC2TuNgay.TabIndex = 11;
+            // 
+            // dateTPBC2DenNgay
+            // 
+            this.dateTPBC2DenNgay.CustomFormat = "yyyy/MM/dd";
+            this.dateTPBC2DenNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTPBC2DenNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTPBC2DenNgay.Location = new System.Drawing.Point(501, 123);
+            this.dateTPBC2DenNgay.Name = "dateTPBC2DenNgay";
+            this.dateTPBC2DenNgay.Size = new System.Drawing.Size(232, 30);
+            this.dateTPBC2DenNgay.TabIndex = 12;
+            // 
             // FrmBC2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(676, 395);
+            this.ClientSize = new System.Drawing.Size(1117, 486);
+            this.Controls.Add(this.dateTPBC2DenNgay);
+            this.Controls.Add(this.dateTPBC2TuNgay);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnThoatBC2);
             this.Controls.Add(this.btnInBC2);
@@ -216,10 +229,9 @@
             this.Controls.Add(this.btnBatDauBC2);
             this.Controls.Add(this.dataGridViewBC2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTPBC2DenNgay);
-            this.Controls.Add(this.dateTPBC2TuNgay);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmBC2";
             this.Text = "BÁO CÁO DOANH THU ";
             this.Load += new System.EventHandler(this.FrmBC2_Load);
@@ -234,8 +246,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTPBC2TuNgay;
-        private System.Windows.Forms.DateTimePicker dateTPBC2DenNgay;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridViewBC2;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaCongTy;
@@ -246,5 +256,7 @@
         private System.Windows.Forms.Button btnInBC2;
         private System.Windows.Forms.Button btnThoatBC2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DateTimePicker dateTPBC2TuNgay;
+        private System.Windows.Forms.DateTimePicker dateTPBC2DenNgay;
     }
 }

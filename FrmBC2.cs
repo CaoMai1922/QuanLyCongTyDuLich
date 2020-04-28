@@ -54,11 +54,11 @@ namespace QuanLyCongTyDuLich
 
             if(dateTPBC2TuNgay.Text != "")
             {
-                sql = sql + "AND DangKiTour.NgayDangKy >= '" + dateTPBC2TuNgay.Value + "' ";
+                sql = sql + "AND DangKiTour.NgayDangKy >= '" + Functions.ConvertDateTime(dateTPBC2TuNgay.Text) + "' ";
             }    
             if(dateTPBC2DenNgay.Text != "")
             {
-                sql = sql + "AND DangKiTour.NgayDangKy <= '" + dateTPBC2DenNgay.Value + "') as e ";
+                sql = sql + "AND DangKiTour.NgayDangKy <= '" + Functions.ConvertDateTime(dateTPBC2DenNgay.Text) + "') as e ";
             }
 
             sql = "SELECT CongTy.MaCongTy, CongTy.TenCongTy, g.DoanhThu " +
@@ -130,11 +130,11 @@ namespace QuanLyCongTyDuLich
 
             if (dateTPBC2TuNgay.Text != "")
             {
-                sql = sql + "AND DangKiTour.NgayDangKy >= '" + dateTPBC2TuNgay.Value + "' ";
+                sql = sql + "AND DangKiTour.NgayDangKy >= '" + Functions.ConvertDateTime(dateTPBC2TuNgay.Text) + "' ";
             }
             if (dateTPBC2DenNgay.Text != "")
             {
-                sql = sql + "AND DangKiTour.NgayDangKy <= '" + dateTPBC2DenNgay.Value + "') as e ";
+                sql = sql + "AND DangKiTour.NgayDangKy <= '" + Functions.ConvertDateTime(dateTPBC2DenNgay.Text) + "') as e ";
             }
 
             sql = "SELECT CongTy.MaCongTy, CongTy.TenCongTy, g.DoanhThu " +
